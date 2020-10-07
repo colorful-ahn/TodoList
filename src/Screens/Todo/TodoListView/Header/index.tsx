@@ -16,7 +16,7 @@ interface Props {}
 const Header = ({  }: Props) => {
   return (
     <Container>
-      <TitleLabel>Todo List App</TitleLabel>
+      <TitleLabel>할 일을 저장해 줍니다.</TitleLabel>
     </Container>
   );
 };
