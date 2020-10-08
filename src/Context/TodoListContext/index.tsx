@@ -10,9 +10,10 @@ const TodoListContext = createContext<ITodoListContext>({
     todoList : [],
     addTodoList : (todo : string) : void => {},
     removeTodoList : (index : number): void => {},
-});
+}); //*임시 대입 구현은 Provider에서 할 것이다. --왜?
 //useState로 생성한 State 데이터를 Context 안에 저장한다. (수정가능)
 const TodoListContextProvider = ({children} : Props) => {
+    //* Context 생성을 위한 todoList, 추가를 위한 Add 제거를 위한 Remove 함수 생성
     const [todoList, setTodoList] = useState<Array<string>>([]);
 
     const addTodoList = (todo : string): void =>{
